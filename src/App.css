@@ -4,13 +4,22 @@
     padding: 20px;
   }
   
+  /* New container for flex layout */
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start; /* Align stats at the top with the grid */
+    gap: 20px; /* space between stats and grid */
+    flex-wrap: wrap; /* in case the viewport is too narrow, elements will wrap */
+  }
+  
   .grid {
-    margin: 20px auto;
+    /* Remove any margin auto here if it's inside the flex container */
+    /* margin: 20px auto; */
   }
   
   .cell {
-    width: 40px;
-    height: 40px;
     background-color: #ccc;
     border: 1px solid #999;
     cursor: pointer;
@@ -26,7 +35,7 @@
   }
   
   .stats {
-    margin-top: 20px;
     font-size: 18px;
+    text-align: left;  /* Align stats text to the left */
   }
   
