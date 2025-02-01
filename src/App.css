@@ -1,0 +1,32 @@
+.App {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  
+  .grid {
+    margin: 20px auto;
+  }
+  
+  .cell {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border: 1px solid #999;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .cell:hover {
+    background-color: #ddd;
+  }
+  
+  .cell.target {
+    background-color: blue;
+  }
+  
+  .stats {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
